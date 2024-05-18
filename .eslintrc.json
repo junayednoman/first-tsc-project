@@ -16,7 +16,8 @@
     "no-console": "warn",
     "prefer-const": "error",
     "no-unused-expressions": "error",
-    "no-undef": "error"
+    "no-undef": "error",
+    "prettier/prettier": 0
   },
   "globals": {
     "process": "readonly",
