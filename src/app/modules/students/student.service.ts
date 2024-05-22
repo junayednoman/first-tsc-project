@@ -1,8 +1,10 @@
 import { Student } from './student.interface';
 import studentModel from './student.model';
 
-const insertStudentDataToDB = async (student: Student) => {
-  const result = await studentModel.create(student);
+const insertStudentDataToDB = async (studentData: Student) => {
+  // const result = await studentModel.create(student);
+  const student = new studentModel(studentData);
+  const result = student.save();
   return result;
 };
 

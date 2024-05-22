@@ -9,6 +9,7 @@ export type Guardian = {
 export type Student = {
   name: string;
   email: string;
+  password: string;
   gender: 'male' | 'female';
   dateOfBirth: string;
   contactNo: string;
